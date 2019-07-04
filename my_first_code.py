@@ -192,7 +192,31 @@
 # mean = sum_of_score/sum_of_values
 # print(mean)
 
-# scores = input('enter a list of numers for x seperated by space: ').split()
+scores = input('enter a list of numers for x seperated by space: ').split()
+sum_num_x = sum(int(x) for x in scores)
+print(sum_num_x)
+num_of_values = len(scores)
+mean_x = int(sum_num_x/num_of_values)
+mean_num = f'mean x = {mean_x}'
+print(mean_num)
+mean_deviation_x = map(lambda score: score - mean_x,(int(x) for x in scores))
+print(list(mean_deviation_x))
+
+scores_2 = input('enter a list of numers for y seperated by space: ').split()
+sum_num_y = sum(int(y) for y in scores_2)
+print(sum_num_y)
+num_of_values = len(scores)
+mean_y = int(sum_num_y/num_of_values)
+mean_num = f'mean y = {mean_y}'
+print(mean_num)
+mean_deviation_y = map(lambda score: score - mean_y,(int(y) for y in scores_2))
+print(list(mean_deviation_y))
+
+#delete later
+# scores = input('enter a list of numers for x seperated by space and comma: ')
+# sum_num = sum(scores)
+# print(sum_num)
+
 # sum_num_x = sum(int(x) for x in scores)
 # print(sum_num_x)
 # num_of_values = len(scores)
@@ -202,8 +226,14 @@
 # mean_deviation_x = map(lambda score: score - mean_x,(int(x) for x in scores))
 # print(list(mean_deviation_x))
 
+# a = [1,2,3,4]
+# a = a.split( )
+# print(list)(a)
+
 # scores_2 = input('enter a list of numers for y seperated by space: ').split()
-# sum_num_y = sum(int(y) for y in scores_2)
+# sum_num_y = scores_2.replace(''),()
+# print(sum_num_y)
+#  sum(int(y) for y in scores_2)
 # print(sum_num_y)
 # num_of_values = len(scores)
 # mean_y = int(sum_num_y/num_of_values)
@@ -211,6 +241,17 @@
 # print(mean_num)
 # mean_deviation_y = map(lambda score: score - mean_y,(int(y) for y in scores_2))
 # print(list(mean_deviation_y))
+  
+# scores = input('enter numbers: ').split()
+# print(scores)
+
+
+
+
+
+
+
+
 
 
 
